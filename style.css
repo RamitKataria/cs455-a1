@@ -164,3 +164,8 @@ input:hover, textarea:hover {
 textarea {
     height: 10rem;
 }
+
+#about-section {
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
