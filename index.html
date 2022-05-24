@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Recipe List</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script defer src="script.js" type="text/javascript"></script>
+</head>
+<body>
+
+<header>
+    <nav>
+        <menu>
+            <li><a class="menu-link" href="./index.html">Recipe List</a></li>
+            <li><a class="menu-link" href="./about.html">About</a></li>
+            <li class="menu-right-first">
+                <button class="remove-button" id="remove-all-button">REMOVE ALL</button>
+            </li>
+        </menu>
+    </nav>
+</header>
+
+<main>
+    <button class="form-button" id="show-form-button" onclick="toggleForm()">NEW</button>
+    <form id="new-recipe-form" style="display: none">
+        <ul>
+            <li>
+                <label for="recipe-name-input">Recipe Name <small>(make sure it's unique... if another one with the same
+                    name exists, it will be replaced)</small></label>
+                <input id="recipe-name-input" name="recipe_name" required type="text">
+            </li>
+            <li>
+                <label for="ingredients-input">Ingredients <small>(separate by line break)</small></label>
+                <textarea id="ingredients-input" name="recipe_ings" required></textarea>
+            </li>
+            <li>
+                <label for="steps-input">Steps <small>(separate by line break)</small></label>
+                <textarea id="steps-input" name="recipe_steps" required></textarea>
+            </li>
+        </ul>
+        <button class="form-button" type="submit">DONE</button>
+    </form>
+
+    <div id="recipes-accordion"></div>
+</main>
+
+<footer>
+    <p>Made by <a href="https://github.com/RamitKataria">Ramit Kataria</a></p>
+</footer>
+</body>
+</html>

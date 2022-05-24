@@ -1,0 +1,166 @@
+header {
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+}
+
+.menu-right-first {
+    margin-left: auto;
+}
+
+menu {
+    background-color: rgba(255, 255, 255, 0.09);
+    box-shadow: 0 0 8px #003f42;
+    display: flex;
+    list-style: none;
+    padding-left: 8px;
+    align-items: center;
+    margin: 0;
+}
+
+menu li {
+    font-size: 1.2em;
+    padding: 8px;
+}
+
+.menu-link {
+    color: #80DEEA;
+}
+
+.menu-link:hover {
+    text-decoration: none;
+    color: #B2EBF2;
+}
+
+body {
+    background-color: #121212;
+    color: #E0F7FA;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    padding: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+a {
+    color: #B2EBF2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #006064;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #0097A7;
+}
+
+#recipes-accordion {
+    width: 100%;
+    margin: auto;
+}
+
+.accordion-item {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 10px;
+    border-radius: 1rem;
+    margin: 0.5rem 0;
+}
+
+.accordion-item-header {
+    background-color: rgba(255, 255, 255, 0.07);
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 0;
+    display: flex;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.accordion-item-icon {
+    width: 20px;
+    font-size: 1.5rem;
+    margin-left: auto;
+}
+
+.accordion-item-content {
+    display: none;
+    margin: 16px;
+}
+
+.remove-button {
+    background-color: #C62828;
+}
+
+.form-button {
+    font-size: 1.2rem;
+    margin: 0.5rem auto;
+    display: block;
+}
+
+form {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+form ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+form label {
+    padding: 8px 0 4px 0;
+    display: block;
+    font-size: 1.1rem;
+}
+
+input,
+textarea {
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: none;
+    border-radius: 0.25rem;
+    resize: none;
+    caret-color: white;
+    width: 100%;
+    color: #E0F7FA;
+    padding: 0.5rem;
+    line-height: inherit;
+    box-sizing: border-box;
+}
+
+input:hover, textarea:hover {
+    background-color: rgba(255, 255, 255, 0.07);
+}
+
+textarea {
+    height: 10rem;
+}
